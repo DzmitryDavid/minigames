@@ -1,0 +1,80 @@
+body {
+    font-family: "Press Start 2P", sans-serif;
+    height:100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-color:#000;
+}
+.game__board-wrapper {
+    background-color:#000;
+}
+.game__board-header {
+    display: flex;
+    justify-content: space-around;
+}
+.game__board-title {
+    text-align: center;
+    font-size: 30px;
+    padding: 30px;
+    color:#11c70f;
+}
+.game__board-scores {
+    color: #fff;
+    line-height: 40px;
+    text-transform: uppercase
+    ;
+}
+.game__board-btn button {
+    border: none;
+    background-color: #11c70f;
+    color: #fff;
+    font-size: 20px;
+    font-family: inherit;
+    padding: 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+    border: 2px solid #fff;
+    opacity: 0.5;
+}
+.speed-minus, .speed-plus {
+    border: 2px solid #fff;
+    text-transform: uppercase;
+    background-color: #11c70f;
+    color: #fff;
+    font-size: 20px;
+    font-family: inherit;
+    padding: 10px;
+    cursor: pointer;
+    opacity: 0.5;
+}
+.speed-minus:hover, .speed-plus:hover {
+    opacity: 1;
+}
+.game__board-btn button:hover {
+    opacity: 1;
+}
+#game-board {
+    margin-top: 20px;
+    width: 700px;  
+    height: 550px ;
+    display: grid;
+    grid-template-columns: repeat(21, 1fr);
+    grid-template-rows: repeat(21, 1fr);
+    border: 2px solid #F51E38;
+    background: #11c70f;
+}
+.snake {
+    border-radius: 50%;
+    background: url('./iconfinder_snake_4591880.png');
+    background-size: cover;
+
+}
+
+.food {
+    background: url('./food.png');
+    background-size: cover;
+
+}

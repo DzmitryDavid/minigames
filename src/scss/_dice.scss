@@ -1,0 +1,17 @@
+.dice {
+    display: none;
+    text-align: center;
+    margin-top: 40px;
+    &__frame {
+        border: 2px solid #F51E38;
+        margin: 0 auto;
+        width: 1200px;
+        height: 700px;
+    }
+}
+.showgame {
+    display: block;
+    body {
+        height: auto;
+    }
+}

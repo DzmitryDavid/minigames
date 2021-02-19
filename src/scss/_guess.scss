@@ -1,0 +1,24 @@
+.guess {
+    display: none;
+    text-align: center;
+    margin-top: 40px;
+    &__container {
+       
+        margin: 0 auto;
+    }
+    
+    &__frame {
+        width: 1200px;
+        margin: 0 auto;
+        height: 700px;
+        border: 2px solid #F51E38;
+    
+    }
+}
+.showgame {
+    display: block;
+    
+   
+}
+
+

@@ -1,0 +1,79 @@
+html, body {
+  // width: 100%;
+  min-height: 100vh;
+  box-sizing: border-box;
+  font-family: "Press Start 2P", sans-serif;
+  background: rgba(31,30,30, 0.7) ;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+*
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+button,
+input {
+  font-family: inherit;
+}
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+h1,
+h2,
+h3,
+p {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+
+}
+
+.header {
+  padding-top: 55px;
+  text-align: center;
+  margin-bottom: 50px;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.title {
+  text-align: center;
+  margin-top: 3rem;
+}
+@import 'slider';
+@import 'btns';
+@import 'media';
+@import 'guess';
+@import 'dice';
+@import 'mixins';
+@import 'snake';
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.red-text {
+  color: #F51E38;
+}
+

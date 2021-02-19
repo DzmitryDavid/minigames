@@ -1,0 +1,20 @@
+.snake {
+    display: none;
+    text-align: center;
+    margin-top: 20px;
+    &__container {
+        
+        margin: 0 auto;
+    }
+    
+    &__frame {
+        width: 1000px;
+        height: 720px;
+        border: none;
+    
+    }
+}
+.showgame {
+    display: block;
+    
+}

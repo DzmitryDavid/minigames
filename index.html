@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+	<title>MiniGames</title>
+	<link rel="stylesheet" href=https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap">
+	<link rel="stylesheet" href="/src/css/style.css">
+</head>
+
+<body>
+	<div class="container">
+		<h1 class="header">
+			<span class="red-text">Simple</span>
+			<span>Mini</span> 
+			<span class="red-text">Games</span>
+		</h1>
+			<nav class="btn">
+				<div class="btn btn__guess">Guess Number</div>
+				<div class="btn btn__dice">Dice Game</div>
+				<div class="btn btn__snake">Snake Game</div>
+			</nav>
+
+			
+			<div class="slider__description">
+				<p>rules</p>
+			</div>
+			<div class="slider">
+				<div class="offer__slider">
+					<div class="offer__slider-counter">
+						<div class="offer__slider-prev">
+							<img src="src/icons/left.svg" alt="prev">
+						</div>
+						<span id="current">03</span>
+						/
+						<span id="total">03</span>
+						<div class="offer__slider-next">
+							<img src="src/icons/right.svg" alt="next">
+						</div>
+					</div>
+					<div class="offer__slider-wrapper">
+						<div class="offer__slider-inner">
+							<div class="offer__slide">
+								<img title="Guess the Number" src="/src/img/question2.jpg" alt="pepper">
+							</div>
+							
+							<div class="offer__slide">
+								<img title="Dice Game" src="/src/img/cubeT.jpg" alt="oil">
+							</div>
+							<div class="offer__slide">
+								<img src="src/img/question.jpg" alt="paprika">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+
+		<section class="guess">
+				<div class="guess__container">
+					<iframe class="guess__frame" src="/GuessNumber/indexGuess.html" frameborder="1"></iframe>
+				</div>
+		</section>
+
+		<section class="dice">
+				<div class="dice-container">
+					<iframe class="dice__frame" src="/GameDice/indexDice.html" frameborder="1"></iframe>
+				</div>
+		</section>
+
+		<section class="snake">
+				<div class="snake__container">
+					<iframe class="snake__frame" src="/snakeGame/indexSnake.html" frameborder="1"></iframe>
+				</div>
+		</section>
+	</div>
+
+	<script src="/src/js/slider.js"></script>
+	<script src="/src/js/index.js"></script>
+</body>
+
+</html>
