@@ -57,6 +57,7 @@ body {
     opacity: 1;
 }
 #game-board {
+    position: relative;
     margin-top: 20px;
     width: 700px;  
     height: 550px ;
@@ -64,17 +65,39 @@ body {
     grid-template-columns: repeat(21, 1fr);
     grid-template-rows: repeat(21, 1fr);
     border: 2px solid #F51E38;
-    background: #11c70f;
+    background: #067a04;
 }
 .snake {
-    border-radius: 50%;
-    background: url('./iconfinder_snake_4591880.png');
+    /* border-radius: 50%; */
+    background: url('./icons/snake.svg');
     background-size: cover;
 
 }
 
 .food {
-    background: url('./food.png');
+    background: url('./icons/apple.svg');
     background-size: cover;
+    background-position: center;
+    background-size: 100%;
+}
+.gameover__message {
+    display: flex;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 300px;
+    height: 150px;
+    top: 260px;
+    left: 50%;
+    background: #000;
+    background-size: 100%;
+    transform: translate(-50% );
+    position: absolute;
+    padding: 20px;
+    z-index: 100;
 
+}
+.gameover__message span {
+    color: #fff;
 }

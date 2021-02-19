@@ -1,17 +1,17 @@
 import { getInputDirection } from './input.js';
 
-const speedBtnPlus = document.querySelector('.speed-plus')
-const speedBtnMinus = document.querySelector('.speed-minus')
+const speedBtnPlus = document.querySelector('.speed-plus');
+const speedBtnMinus = document.querySelector('.speed-minus');
 const scores = document.querySelector('.scores');
 
-speedBtnMinus.addEventListener('click', () => SNAKE_SPEED--)
-speedBtnPlus.addEventListener('click', () => SNAKE_SPEED++)
+speedBtnMinus.addEventListener('click', () => SNAKE_SPEED--);
+speedBtnPlus.addEventListener('click', () => SNAKE_SPEED++);
 
 
 export let SNAKE_SPEED = 3;
 
-const snakeBody = [{ x: 11, y: 11 }]
-let newSegments = 0
+const snakeBody = [{ x: 11, y: 11 }];
+let newSegments = 0;
 let counter = 0;
 
 
@@ -24,8 +24,8 @@ export function update() {
         snakeBody[i + 1] = { ...snakeBody[i] }
     }
 
-    snakeBody[0].x += inputDirection.x
-    snakeBody[0].y += inputDirection.y
+    snakeBody[0].x += inputDirection.x;
+    snakeBody[0].y += inputDirection.y;
 }
 
 export function draw(gameBoard) {
